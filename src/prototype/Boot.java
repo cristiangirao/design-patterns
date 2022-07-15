@@ -9,9 +9,12 @@ public class Boot {
 		
 		employeePrototype.put("intern", new Intern());
 		employeePrototype.put("supervisor", new Supervisor());
+		employeePrototype.put("bolsista", new Bolsista());
 		
 		employeePrototype.get("intern").clone();
+		Employee employee = employeePrototype.get("supervisor").clone();		
+		System.out.println("--------------------");
 		
-		employeePrototype.get("supervisor").clone();
+		Employee bolsista = employeePrototype.get("bolsista").clone();
 	}
 }
